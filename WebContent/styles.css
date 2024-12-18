@@ -1,0 +1,161 @@
+@charset "ISO-8859-1";
+
+#errorMessage {
+    /* Estilo para el mensaje de error */
+    position: fixed;
+    top: 60px; 
+    right: 20px;
+    background-color: #e53e3e; /* Rojo para error */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+}
+
+ #successMessage {
+        /* Estilo del mensaje */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #38a169; /* Verde para éxito */
+        color: white;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        z-index: 1000;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    /* Para animación de desvanecimiento */
+    .fadeOut {
+        opacity: 0;
+    }
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+}
+
+#bodyInicio {
+    background-image: url('https://www.shutterstock.com/image-photo/empty-defocused-university-classroom-blurred-600nw-2282856415.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #000;
+}
+
+#formulario-inicio {
+    background-color: rgba(245, 245, 220, 0.7); /* Fondo semi-transparente */
+    height: 208px;
+    width: 727px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 208px;	
+}
+
+
+#body-menu-admin {
+	background-image: url('https://www.shutterstock.com/image-photo/empty-defocused-university-classroom-blurred-600nw-2282856415.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #000;	
+  
+}
+
+
+#body-gestion-aulas{
+	background-image: url('https://i.postimg.cc/FsvR4C85/Monica-2024-10-30-20-43-29.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #000;
+	
+}
+
+
+.bubble-inicio {
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco con algo de transparencia */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Borde negro con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin: 20px auto; /* Centrar el contenedor */
+    width: 80%; /* Ancho del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.bubble {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con transparencia */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Borde negro con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    display: inline-block; /* Para que el fondo se ajuste al contenido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+.bubble-gestion-aulas {
+    background-color: rgba(240, 248, 255, 0.9); /* Color azul claro con transparencia */
+    border: 2px solid rgba(0, 102, 204, 0.5); /* Borde azul con transparencia */
+    border-radius: 20px; /* Bordes más redondeados */
+    padding: 30px; /* Espaciado interno aumentado */
+    margin: 20px auto; /* Centrar el contenedor */
+    width: 70%; /* Ancho del contenedor reducido */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.bubble-gestion-aulas:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+}
+
+
+.table {
+    border-collapse: collapse; /* Colapsa los bordes para que las líneas sean más definidas */
+    width: 100%; /* Asegura que la tabla use todo el ancho disponible */
+}
+
+.table th, .table td {
+    border: 2px solid rgba(0, 0, 0, 0.7); /* Borde más oscuro para las celdas */
+    text-align: center; /* Centra el texto dentro de las celdas */
+    padding: 10px; /* Aumenta el espaciado interno de las celdas */
+}
+
+.table thead th {
+    background-color: rgba(0, 102, 204, 0.2); /* Color de fondo más visible para los encabezados */
+    color: #000; /* Color del texto de los encabezados */
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 102, 204, 0.1); /* Efecto hover para las filas */
+}
